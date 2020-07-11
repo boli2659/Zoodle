@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Zoodle</string>
+    <string name="color">Color</string>
+    <string name="save">Save</string>
+    <string name="stroke_width">Stroke width</string>
+    <string name="stroke">Stroke</string>
+    <string name="erase">Erase</string>
+    <string name="clear">Clear</string>
+    <string name="background_color">Background color</string>
+    <string name="fill">Fill</string>
+    <string name="done">Done</string>
+    <string name="alpha">Alpha</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+</resources>

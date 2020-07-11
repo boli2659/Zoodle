@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.znarlycode.zoodle.ColorSelectionModal
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:layout_gravity="bottom"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/stroke_color_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/circular_image_frame"
+        android:src="@drawable/ic_color"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textColor="@android:color/white"
+                android:text="@string/alpha"/>
+
+            <SeekBar
+                android:id="@+id/alpha_seek_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_margin="24dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:progressBackgroundTint="@color/colorPrimaryDark"
+                android:hapticFeedbackEnabled="true"
+                android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                android:max="255"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textColor="@android:color/white"
+                android:text="@string/red"/>
+
+            <SeekBar
+                android:id="@+id/red_seek_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_margin="24dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:progressBackgroundTint="@color/colorPrimaryDark"
+                android:hapticFeedbackEnabled="true"
+                android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                android:max="255"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textColor="@android:color/white"
+                android:text="@string/green"/>
+
+            <SeekBar
+                android:id="@+id/green_seek_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_margin="24dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:progressBackgroundTint="@color/colorPrimaryDark"
+                android:hapticFeedbackEnabled="true"
+                android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                android:max="255"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textColor="@android:color/white"
+                android:text="@string/blue"/>
+
+            <SeekBar
+                android:id="@+id/blue_seek_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_margin="24dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:progressBackgroundTint="@color/colorPrimaryDark"
+                android:hapticFeedbackEnabled="true"
+                android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                android:outlineSpotShadowColor="@color/colorPrimaryDark"
+                android:max="255"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/stroke_color_done_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:textAllCaps="false"
+        android:text="@string/done"/>
+</com.znarlycode.zoodle.ColorSelectionModal>
+
